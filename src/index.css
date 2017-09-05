@@ -1,3 +1,14 @@
+.app{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items:center;
+}
+.app > span {
+	margin: 10px auto;
+	max-width: 100%;
+}
 body {
   margin: 0;
   padding: 0;

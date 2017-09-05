@@ -3,6 +3,7 @@ import './App.css';
 
 import { Header } from './components/Header'
 import ProfileBody from './components/ProfileBody'
+import Youtube from 'react-youtube'
 
 class App extends Component {
   render() {
@@ -12,18 +13,32 @@ class App extends Component {
       profileImg:hugh.profileImg,
       infoParagraphs:hugh.infoParagraphs
     }
+    const videoId = "_k_1sW75M2I"
+    const youtubeOpts = {
+      height: '390',
+      width: '640',
+      playerVars: { // https://developers.google.com/youtube/player_parameters 
+        autoplay: 0,
+        modestbranding:1,
+        listType:"user_uploads",
+        list:"UCYjktLnPZi4LHSz1QXwc4dA"
+      }
+    }
     return (
- <div className="container">
-  
-  <Header 
-      name={ hugh.name } 
-      stats={ hugh.carrerStats } 
-      headerImage = { hugh.coverImg }
-      tags={ hugh.titles }
-      />
-  <ProfileBody {...profileProps}/>
-  
-</div>
+  <div className="app">
+    
+     <div className="container">
+      
+      <Header 
+          name={ hugh.name } 
+          stats={ hugh.carrerStats } 
+          headerImage = { hugh.coverImg }
+          tags={ hugh.titles }
+          />
+      <ProfileBody {...profileProps}/>
+    </div>
+    <Youtube className="youtube" videoId={ videoId } opts={ youtubeOpts }/>
+  </div>
     );
   }
 }

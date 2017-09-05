@@ -1,16 +1,17 @@
 {
   "name": "user-profile",
-  "homepage":"https://github.com/vlw0052/Tutorial---ReactJS-Components-and-Props",
+  "homepage": "https://vlw0052.github.io/Tutorial---ReactJS-Components-and-Props/",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.13"
+    "react-scripts": "1.0.13",
+    "react-youtube": "^7.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -r build/ docs",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
