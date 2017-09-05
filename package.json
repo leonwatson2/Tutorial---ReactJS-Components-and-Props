@@ -1,6 +1,7 @@
 {
   "name": "user-profile",
-  "version": "0.1.0",
+  "homepage":"https://github.com/vlw0052/Tutorial---ReactJS-Components-and-Props",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
